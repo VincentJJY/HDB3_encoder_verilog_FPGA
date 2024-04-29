@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: Ju Yang
+// Engineer: VincentJJY
 // 
 // Create Date: 2024/04/24 21:48:40
 // Design Name: 
@@ -163,10 +163,6 @@ else if(w_plug_b==2'b10 && (r_ri[7:6]==2'b01) && r_polar)//mantain the polar wit
 ro_hdb3_code<=2'b01;
 else if(w_plug_b==2'b10 && (r_ri[7:6]==2'b01) && (!r_polar))
 ro_hdb3_code<=2'b10;
-else if((w_plug_b==2'b10)  && r_polar)
-ro_hdb3_code<=2'b10;
-else if((w_plug_b==2'b10) && (!r_polar))
-ro_hdb3_code<=2'b01;
 else if((w_plug_b==2'b10)  && r_polar)
 ro_hdb3_code<=2'b10;
 else if((w_plug_b==2'b10) && (!r_polar))
